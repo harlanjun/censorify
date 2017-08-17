@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>draggable</title>
+	<link rel="stylesheet" type="text/css" href="../themes/default/easyui.css">
+	<link rel="stylesheet" type="text/css" href="../themes/icon.css">
+	<script type="text/javascript" src="../jquery.min.js"></script>
+	<script type="text/javascript" src="../jquery.easyui.min.js"></script>
+</head>
+<body>
+	<!-- <div class="easyui-draggable" style="width: 400px;height: 400px;background: red"></div> -->
+	<div id="box" style="width: 400px;height: 400px;background: pink"></div>
+</body>
+
+<script type="text/javascript">
+//js模式
+	(function(){
+		$(function(){
+			$("#box").draggable({
+				revert:true,//默认为false
+				cursor:'text'//拖动时指针样式
+			});
+		})
+	})();
+</script>
+</html>
