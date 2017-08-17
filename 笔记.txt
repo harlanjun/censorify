@@ -1,0 +1,6 @@
+parser解析器
+	$.parser.parse();//解析所有ui，必须设置父类容器
+	$.parser.onComplete=function(){}//ui解析完毕后执行
+
+draggable拖动组件
+	<div></div>
